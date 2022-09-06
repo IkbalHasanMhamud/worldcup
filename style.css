@@ -1,0 +1,236 @@
+
+
+main{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+@media (min-width:1024px) {
+        
+    .top{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(1, 43, 29);
+        margin: 50px 120px;
+        padding: 50px 80px 0;
+        grid-column-gap: 50px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+    }
+    .top h2{
+        font-size: 50px;
+        color: white;
+    }
+    .top-details{
+        padding-bottom: 80px;
+    }
+    .image{
+        width: 100%;
+
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+    }
+    button{
+        padding: 10px;
+        background-color: rgba(3, 131, 82, 0.918);
+        color: white;
+        border: none;
+        border-radius: 7px;
+    }
+
+    #all-about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)75%;
+        margin: 50px 120px;
+        grid-column-gap: 20px;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 180px;
+        background-color: rgb(1, 43, 29);
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .menu button{
+        height: 40px;
+        padding: 10px;
+        margin: 0 15px;
+        align-content: center;
+    }
+    #match-result{
+        background-color: rgb(2, 180, 180);
+    }
+    .report{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .match-report{
+        background-color: antiquewhite;
+        border-radius: 10px;
+
+    }
+    .match-details{
+        padding: 10px;
+        
+    }
+    .match-image{
+        width: 100%;
+        height: 50%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .icons img{
+        width: 30px;
+        margin-right: -10px;
+        padding-top: -10px;
+    }
+    .icons{
+        display: flex;
+        
+        column-gap: 15px;
+    }
+
+
+    footer{
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        background-color: rgb(1, 43, 29);
+        padding: 100px;
+        color: white;
+
+    }
+    footer hr{
+        margin: 0 20px;
+    }
+    .foot-menu{
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+    }
+}
+
+
+/*-----------------Tablet---------------------*/
+@media (min-width:768px) and 
+(max-width:1023px) {
+    body{
+        margin: 5%;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .top{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(1, 43, 29);
+        padding: 20px 20px 0 20px;
+        text-align: center;
+        color: white;
+        column-gap: 20px;
+    }
+    .match-report img{
+        width: 100%;
+    }
+    .icons img{
+        width: 30px;
+    }
+
+
+}
+
+
+/*----------Mobile 
+-------------------Quarry-----------------------
+----------*/
+
+@media (max-width: 767px ) {
+    
+    body{
+        
+        
+        align-items: center;
+        align-content: center;
+    }
+    main{
+        margin: 3%;
+    }
+    section{
+        margin-bottom: 50px;
+
+    }
+    button{
+        padding: 10px;
+        background-color: rgba(3, 131, 82, 0.918);
+        color: white;
+        border: none;
+        border-radius: 7px;
+        width: fit-content;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(1, 43, 29);
+        color: white;
+        padding: 10px 20px 0 20px;
+        text-align: center;
+        border-radius: 10px;
+
+    }
+    .top img{
+        height: 80%;
+        width: 90%;
+        padding: 5px 10px 0 10px;
+    }
+    
+    #all-about{
+        display: block;
+
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        justify-content: center;
+        row-gap: 10px;
+        align-items: center;
+    }
+    #match-result{
+        background-color: rgb(2, 180, 180);
+    }
+    .report{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .match-report{
+        background-color: bisque;
+        border-radius: 10px;
+        
+    }
+    .match-report img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .match-details{
+        padding: 20px;
+    }
+    .icons img{
+        width: 30px;
+    }
+    footer{
+        text-align: center;
+        background-color: rgb(1, 43, 29);
+        padding: 30px;
+        color: white;
+        
+    }
+
+}
