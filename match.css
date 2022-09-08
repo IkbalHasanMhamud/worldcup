@@ -42,7 +42,6 @@ main{
         border: none;
         border-radius: 7px;
     }
-
     #all-about{
         display: grid;
         grid-template-columns: repeat(1, 1fr)75%;
@@ -67,41 +66,38 @@ main{
     #match-result{
         background-color: rgb(2, 180, 180);
     }
-    .report{
+    .matches{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        column-gap: 20px;
+        row-gap: 20px;
     }
-    .match-report{
-        background-color: antiquewhite;
+    .match{
+        background-color: rgb(173, 247, 236);
         border-radius: 10px;
+        padding: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+    .flag{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        column-gap: 10px;
+        
 
     }
-    .match-details{
-        padding: 10px;
-        
+    .flag img{
+        width: 40%;
     }
-    .match-image{
-        width: 100%;
-        height: 50%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .icons img{
-        width: 30px;
-        margin-right: -10px;
-        padding-top: -10px;
-    }
-    .icons{
-        display: flex;
-        
-        column-gap: 15px;
-    }
+
+
+
+
     #tab-only{
         display: none;
     }
-
     footer{
         font-family: 'Inter', sans-serif;
         text-align: center;
@@ -119,7 +115,6 @@ main{
         column-gap: 30px;
     }
 }
-
 
 /*-----------------Tablet---------------------*/
 @media (min-width:768px) and 
@@ -155,26 +150,34 @@ main{
         border: none;
         border-radius: 5px;
     }
-    .report{
+    
+    .matches{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
         row-gap: 20px;
     }
-    .match-report{
-        background-color: bisque;
+    .match{
+        background-color: rgb(173, 247, 236);
         border-radius: 10px;
+        padding: 5%;
+        justify-content: center;
+        text-align: center;
     }
-    .match-report img{
+    .flag{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
-        border-radius: 10px;
+        column-gap: 10px;
+        
+
     }
-    .match-details{
-        padding: 15px;
+    .flag img{
+        width: 100%;
     }
-    .icons img{
-        width: 30px;
-    }
+
+
     #tab-only{
         text-align: center;
     }
@@ -192,7 +195,6 @@ main{
     }
 
 }
-
 
 /*----------Mobile 
 -------------------Quarry-----------------------
@@ -253,26 +255,33 @@ main{
     #match-result{
         background-color: rgb(2, 180, 180);
     }
-    .report{
+    
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .match{
+        background-color: rgb(173, 247, 236);
+        border-radius: 10px;
+        padding: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+    .flag{
         display: flex;
-        flex-direction: column;
-        row-gap: 25px;
-    }
-    .match-report{
-        background-color: bisque;
-        border-radius: 10px;
-        
-    }
-    .match-report img{
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
-        border-radius: 10px;
+        column-gap: 20px;
+        
+
     }
-    .match-details{
-        padding: 20px;
+    .flag img{
+        width: 80%;
     }
-    .icons img{
-        width: 30px;
-    }
+
     #tab-only{
         display: none;
     }
