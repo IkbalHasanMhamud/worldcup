@@ -6,6 +6,10 @@ main{
 }
 #match-result{
     background-color: rgb(2, 180, 180);}
+a{
+    text-decoration: none;
+    color: white;
+}
 
 @media (min-width:1024px) {
         
