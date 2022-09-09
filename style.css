@@ -13,6 +13,11 @@ a{
 button{
     color: white;
 }
+.top button:hover{
+    color: rgba(3, 131, 82, 0.918);
+    background-color: white;
+    transition: 2s;
+}
 
 @media (min-width:1024px) {
         
